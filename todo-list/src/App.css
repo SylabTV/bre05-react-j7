@@ -1,0 +1,101 @@
+body {
+  font-family: "Monaco", "Consolas", "Courier New", monospace;
+  background-color: #272822;
+  color: #f8f8f2;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.todo-container {
+  background: #272822;
+  width: 380px;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #49483e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #a6e22e;
+  margin-bottom: 2rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.todo-form input {
+  flex: 1;
+  background: #3e3d32;
+  border: 1px solid #49483e;
+  border-radius: 4px;
+  padding: 10px;
+  color: #f8f8f2;
+  outline: none;
+}
+
+.todo-form button {
+  background: #f92672;
+  color: #fff;
+  border: none;
+  padding: 0 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.todo-form button:hover {
+  filter: brightness(1.2);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #3e3d32;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.todo-item input[type="checkbox"] {
+  accent-color: #66d9ef;
+  margin-right: 12px;
+}
+
+.task-text {
+  flex: 1;
+  color: #f8f8f2;
+}
+
+.todo-item input:checked + .task-text {
+  text-decoration: line-through;
+  color: #75715e;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #e6db74;
+  border: 1px solid #e6db74;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e6db74;
+  color: #272822;
+}
